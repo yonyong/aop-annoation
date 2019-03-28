@@ -7,6 +7,7 @@
 .settings
 .project
 .classpath
+.catalina.home_IS_UNDEFINED
 
 # Log file
 *.log
