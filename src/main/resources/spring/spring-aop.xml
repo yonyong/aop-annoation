@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- <bean id="helloWorldImpl1" class="com.cn.aop.demo.HelloWorldImpl1" />
+	<bean id="helloWorldImpl2" class="com.cn.aop.demo.HelloWorldImpl2" /> -->
+	<!-- <bean id="timeHandler" class="com.cn.aop.demo.TimeHandler" /> -->
+
+	<!-- <context:component-scan base-package="com.cn.aop.demo"></context:component-scan> -->
+
+	<!-- <bean id="java" class="com.cn.aop.demo.JavaWorker"/>
+	<bean id="ios" class="com.cn.aop.demo.IosWorker"/>
+	<bean id="renshi" class="com.cn.aop.demo.Renshi"></bean>
+	
+	<aop:config>
+		<aop:aspect id="time" ref="timeHandler">
+			<aop:pointcut id="addAllMethod"
+				expression="execution(* com.cn.aop.demo.HelloWorld.*(..))" />
+			<aop:before method="printTime" pointcut-ref="addAllMethod" />
+			<aop:after method="printTime" pointcut-ref="addAllMethod" />
+		</aop:aspect>
+		<aop:aspect id="help" ref="renshi">
+			<aop:pointcut expression="execution(* com.cn.aop.demo.Worker.*(..))" id="addAllMethod2"/>
+			<aop:before method="work1" pointcut-ref="addAllMethod2"/>
+			<aop:after method="work2" pointcut-ref="addAllMethod2"/>
+			<aop:around method="work3" pointcut-ref="addAllMethod2"/>
+		</aop:aspect>
+	</aop:config> -->
+	<aop:aspectj-autoproxy/>
+
+</beans>
